@@ -148,7 +148,7 @@ export default function CustomizationQuiz({ onClose }: QuizProps) {
         {/* Progress Bar */}
         <div className='h-1 bg-stone-200'>
           <motion.div
-            className='h-full bg-[#E8002D]'
+            className='h-full bg-black'
             initial={{ width: '0%' }}
             animate={{ width: `${((step + 1) / 4) * 100}%` }}
             transition={{ duration: 0.3 }}
@@ -210,7 +210,7 @@ export default function CustomizationQuiz({ onClose }: QuizProps) {
             <button
               onClick={handleNext}
               disabled={!canProceed()}
-              className='flex items-center gap-2 px-8 py-2.5 bg-[#E8002D] text-white font-medium hover:bg-[#c0001f] disabled:opacity-50 disabled:cursor-not-allowed transition-colors'
+              className='flex items-center gap-2 px-8 py-2.5 bg-black text-white font-medium hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed transition-colors'
             >
               Next
               <ChevronRight size={18} />
@@ -218,7 +218,7 @@ export default function CustomizationQuiz({ onClose }: QuizProps) {
           ) : (
             <button
               onClick={handleSubmit}
-              className='px-8 py-2.5 bg-[#E8002D] text-white font-medium hover:bg-[#c0001f] transition-colors'
+              className='px-8 py-2.5 bg-black text-white font-medium hover:bg-gray-900 transition-colors'
             >
               Get My Recommendation
             </button>

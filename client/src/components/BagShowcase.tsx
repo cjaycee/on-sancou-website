@@ -64,7 +64,7 @@ export default function BagShowcase({ onCustomizeClick }: BagShowcaseProps = {})
 
             {/* Tag */}
             <div className='absolute top-6 left-6 z-10'>
-              <span className='text-[10px] font-semibold tracking-widest uppercase bg-[#E8002D] text-white px-3 py-1.5'>
+              <span className='text-[10px] font-semibold tracking-widest uppercase bg-black text-white px-3 py-1.5'>
                 New Arrival
               </span>
             </div>
@@ -102,7 +102,7 @@ export default function BagShowcase({ onCustomizeClick }: BagShowcaseProps = {})
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
           >
             <div>
-              <p className='text-xs tracking-[0.2em] uppercase text-[#E8002D] font-semibold mb-3' style={{ fontFamily: "'Inter', sans-serif" }}>
+              <p className='text-xs tracking-[0.2em] uppercase text-black font-semibold mb-3' style={{ fontFamily: "'Inter', sans-serif" }}>
                 Sancou Bag
               </p>
               <h2
@@ -150,7 +150,7 @@ export default function BagShowcase({ onCustomizeClick }: BagShowcaseProps = {})
             <div className='flex items-center gap-4'>
               <button
                 onClick={onCustomizeClick}
-                className='group flex items-center gap-3 px-8 py-3.5 bg-[#E8002D] text-white text-sm font-medium tracking-wide hover:bg-[#c0001f] transition-colors duration-300'
+                className='group flex items-center gap-3 px-8 py-3.5 bg-black text-white text-sm font-medium tracking-wide hover:bg-gray-900 transition-colors duration-300'
               >
                 Customize Your Bag
                 <ArrowRight

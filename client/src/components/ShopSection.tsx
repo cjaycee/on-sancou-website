@@ -5,7 +5,7 @@
  * - Tab-based navigation: Shoes | Apparel | Accessories
  * - Product cards with hover lift and subtle shadow
  * - Inter font throughout (ON Brand)
- * - ON Red (#E8002D) for CTAs and active tab indicator
+ * - Black for CTAs and active tab indicator
  */
 
 import { useState } from 'react';
@@ -149,7 +149,7 @@ export default function ShopSection() {
                 {cat}
                 {activeCategory === cat && (
                   <motion.div
-                    className='absolute bottom-0 left-0 right-0 h-0.5 bg-[#E8002D]'
+                    className='absolute bottom-0 left-0 right-0 h-0.5 bg-black'
                     layoutId='tab-indicator'
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />
@@ -183,7 +183,7 @@ export default function ShopSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <button className='group flex items-center gap-3 px-8 py-3.5 bg-[#1A1A1A] text-white text-sm font-medium tracking-wide hover:bg-[#E8002D] transition-colors duration-300 rounded-none'>
+          <button className='group flex items-center gap-3 px-8 py-3.5 bg-[#1A1A1A] text-white text-sm font-medium tracking-wide hover:bg-gray-900 transition-colors duration-300 rounded-none'>
             View All {activeCategory}
             <ArrowRight
               size={16}
@@ -215,7 +215,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         style={{ borderRadius: '2px' }}
       >
         {product.tag && (
-          <span className='absolute top-4 left-4 z-10 text-[10px] font-semibold tracking-widest uppercase bg-[#E8002D] text-white px-2.5 py-1'>
+          <span className='absolute top-4 left-4 z-10 text-[10px] font-semibold tracking-widest uppercase bg-black text-white px-2.5 py-1'>
             {product.tag}
           </span>
         )}
